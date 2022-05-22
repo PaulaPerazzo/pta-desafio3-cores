@@ -1,8 +1,11 @@
 const button = document.querySelector(".button");
 
-let changeBody = document.querySelector('body')
+let changeBody = document.querySelector('body');
+
+var backgroundName = document.getElementById('#background-name');
 
 button.addEventListener('click', () => {
-    button.style.background = '#ffffff'
-    changeBody.style.background = '#ffffff'
-})
+    // changeBody.classList.toggle('f2');
+    changeBody.classList.replace('body', 'f2');
+});
+
